@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff6bb8a6-f1bd-43b3-9310-439e652b7435" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/IoCTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="146" column="29" lean-forward="true" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
+              <folding>
+                <element signature="e#7#25#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tests/Container/IoC.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/Container/Fakes/EmptyClass.php" />
+        <option value="$PROJECT_DIR$/Container/Fakes/DependantWithDependanciesInterface.php" />
+        <option value="$PROJECT_DIR$/Container/Bindings/IoCInitialBinding.php" />
+        <option value="$PROJECT_DIR$/Container/Bindings/IoCBindingInterface.php" />
+        <option value="$PROJECT_DIR$/Container/Bindings/IoCInitialBinder.php" />
+        <option value="$PROJECT_DIR$/Container/Fakes/DependantWithDependancies.php" />
+        <option value="$PROJECT_DIR$/Container/Bindings/BindingResolutionFactory.php" />
+        <option value="$PROJECT_DIR$/Container/Bindings/IoCBinding.php" />
+        <option value="$PROJECT_DIR$/Container/Exceptions/ResolutionNotProvidedException.php" />
+        <option value="$PROJECT_DIR$/Container/Exceptions/UnboundDependencyRequestedException.php" />
+        <option value="$PROJECT_DIR$/Container/IoC.php" />
+        <option value="$PROJECT_DIR$/tests/IoCTest.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
+              <item name="Container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
+              <item name="Container" type="462c0819:PsiDirectoryNode" />
+              <item name="Bindings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
+              <item name="Container" type="462c0819:PsiDirectoryNode" />
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
+              <item name="Container" type="462c0819:PsiDirectoryNode" />
+              <item name="Fakes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Container" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHPUnit.IoCTest">
+    <configuration name="IoCTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="IoCTest.a_binding_can_be_removed" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="a_binding_can_be_removed" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="IoCTest.a_bound_closure_can_make_reference_to_the_container" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="a_bound_closure_can_make_reference_to_the_container" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="IoCTest.it_can_be_queried_for_the_existence_of_a_binding" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="it_can_be_queried_for_the_existence_of_a_binding" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="IoCTest.requesting_the_removal_of_a_nonexistent_binding_fails_gracefully" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="requesting_the_removal_of_a_nonexistent_binding_fails_gracefully" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.IoCTest" />
+        <item itemvalue="PHPUnit.IoCTest.a_bound_closure_can_make_reference_to_the_container" />
+        <item itemvalue="PHPUnit.IoCTest.requesting_the_removal_of_a_nonexistent_binding_fails_gracefully" />
+        <item itemvalue="PHPUnit.IoCTest.a_binding_can_be_removed" />
+        <item itemvalue="PHPUnit.IoCTest.it_can_be_queried_for_the_existence_of_a_binding" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff6bb8a6-f1bd-43b3-9310-439e652b7435" name="Default Changelist" comment="" />
+      <created>1577610690582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577610690582</updated>
+      <workItem from="1577610691949" duration="10137000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="IoCTest_it_can_be_queried_for_the_existence_of_a_binding - 2019.12.29 at 15h 28m 34s.xml">
+      <configuration name="IoCTest.it_can_be_queried_for_the_existence_of_a_binding" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest_it_can_be_queried_for_the_existence_of_a_binding - 2019.12.29 at 15h 28m 58s.xml">
+      <configuration name="IoCTest.it_can_be_queried_for_the_existence_of_a_binding" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest_a_binding_can_be_removed - 2019.12.29 at 15h 29m 50s.xml">
+      <configuration name="IoCTest.a_binding_can_be_removed" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest_a_binding_can_be_removed - 2019.12.29 at 15h 30m 34s.xml">
+      <configuration name="IoCTest.a_binding_can_be_removed" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest_requesting_the_removal_of_a_nonexistent_binding_fails_gracefully - 2019.12.29 at 15h 31m 34s.xml">
+      <configuration name="IoCTest.requesting_the_removal_of_a_nonexistent_binding_fails_gracefully" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest - 2019.12.29 at 15h 34m 00s.xml">
+      <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest_a_bound_closure_can_make_reference_to_the_container - 2019.12.29 at 15h 36m 18s.xml">
+      <configuration name="IoCTest.a_bound_closure_can_make_reference_to_the_container" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest - 2019.12.29 at 15h 36m 26s.xml">
+      <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest - 2019.12.29 at 15h 38m 54s.xml">
+      <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest - 2019.12.29 at 15h 39m 07s.xml">
+      <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10137000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32982457" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32982457" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Remote Host" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DependencyInjectionContainer$IoCTest.xml" NAME="IoCTest Coverage Results" MODIFIED="1577612198552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/Mockable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Classes/EmptyClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Bindings/BindingResolutionFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#40#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Bindings/IoCBinding.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="e#38#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Bindings/IoCBindingInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Bindings/IoCInitialBinder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Exceptions/ResolutionNotProvidedException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#41#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Exceptions/UnboundDependencyRequestedException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Fakes/EmptyInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/IoC.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="e#29#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Fakes/EmptyClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Fakes/DependantWithDependancies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Fakes/DependantWithDependanciesInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/IoCTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="146" column="29" lean-forward="true" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
+          <folding>
+            <element signature="e#7#25#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

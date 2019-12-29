@@ -1,0 +1,21 @@
+{
+    "name": "lukedowning/dependency-injection-container",
+    "description": "A simple, no-nonsense IoC Container written in PHP for Dependency Injection",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Downing",
+            "email": "luke@ricorocks.agency"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Container\\": "Container/"
+        }
+    }
+}
