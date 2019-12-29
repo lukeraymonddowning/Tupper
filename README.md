@@ -1,0 +1,84 @@
+# Dependency Injection Container for PHP
+A simple, no-nonsense IoC Container written in PHP for Dependency Injection (DI).
+
+Dependency Injection and Dependency Inversion are powerful concepts that improve code readability, maintainability and stability.
+
+More often than not, you'll want a IoC container that allows you to manage these dependancies from one place. These containers are often convoluted and technically expensive, creating friction between you and your code. This library removes all of the fluff and leaves just the essentials, allowing you to quickly implement DI in your project.
+
+# Installation
+This package is available via composer:
+
+`composer require lukedowning/dependency-injection-container`
+
+# Basic Usage
+To use this the container, create an instance of it in your project:
+
+```
+<?php
+
+$ioc = new Downing\Container\IoC();
+```
+
+Then, during your system registration, you'll want to register your dependencies. You can do so using the following syntax:
+
+```
+$ioc->whenRequested(YourAbstraction::class)
+    ->provide(YourImplementation::class);
+```
+
+You may bind almost any abstraction to any implementation, and it will be resolved for you. For example:
+
+```
+$ioc->whenRequested("foo")
+    ->provide("bar");
+```
+
+or...
+
+```
+$ioc->whenRequested(YourAbstraction::class)
+    ->provide(function() {
+      return new YourImplementation();
+    });
+```
+
+To resolve a dependancy out of the container, you may do one the following:
+
+```
+// Using the request method
+$implementation = $ioc->request(YourAbstraction::class);
+
+// By invoking the class, which calls the request method behind the scenes
+$implementation = $ioc(YourAbstraction::class);
+```
+
+# Advanced Usage
+
+When you resolve a dependency through the container, it will attempt to resolve any dependencies of that dependency through the container too. This allows for nested dependencies, which can be very powerful.
+
+```
+class DependencyWithDependencies {
+  
+  public $dependency;
+  
+  public __construct(DependencyInterface $dependency) {
+    $this->dependency = $dependency;
+  }
+  
+}
+
+$ioc->whenRequested(DependencyInterface::class)
+    ->provide(DependencyImplementation::class);
+    
+$dependency = $ioc->request(DependencyWithDependencies::class);
+$dependencyOfDependency = $dependency->dependency;
+```
+
+Additionally, bindings that provide a Closure are resolved in the same manner. This allows you to request dependencies in the closure parameters and have them automatically resolved for you to use. You may, of course, request a binding from the container inside the Closure too.
+
+```
+$ioc->whenRequested(YourAbstraction::class)
+    ->provide(function(Dependency $dependency) {
+      return new Decorator($dependency);
+    });
+```
