@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Downing\Container\Bindings;
+namespace Downing\Tupper\Bindings;
 
 
 interface IoCProvidingInterface {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Downing\Container\Exceptions;
+namespace Downing\Tupper\Exceptions;
 
 
 use Exception;

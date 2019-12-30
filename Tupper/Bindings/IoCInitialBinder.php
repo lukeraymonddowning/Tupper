@@ -1,6 +1,6 @@
 <?php
 
-namespace Downing\Container\Bindings;
+namespace Downing\Tupper\Bindings;
 
 class IoCInitialBinder implements IoCBindingInterface {
 

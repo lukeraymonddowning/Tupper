@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Downing\Container\Fakes;
+namespace Downing\Tupper\Fakes;
 
 
 interface EmptyInterface {

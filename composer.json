@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Downing\\Container\\": "Container/"
+            "Downing\\Tupper\\": "Tupper/"
         }
     }
 }

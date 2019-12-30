@@ -22,7 +22,7 @@ To use this the container, create an instance of it in your project:
 ```
 <?php
 
-$ioc = new Downing\Container\IoC();
+$ioc = new Downing\Tupper\IoC();
 ```
 
 Then, during your system registration, you'll want to register your dependencies. You can do so using the following syntax:

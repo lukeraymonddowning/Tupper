@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Downing\Container\Exceptions;
+namespace Downing\Tupper\Exceptions;
 
 use Exception;
 use ReflectionClass;
 use ReflectionException;
-use Downing\Container\Bindings\IoCBindingInterface;
+use Downing\Tupper\Bindings\IoCBindingInterface;
 
 class ResolutionNotProvidedException extends Exception {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Downing\Container\Fakes;
+namespace Downing\Tupper\Fakes;
 
 class EmptyClass implements EmptyInterface {
 

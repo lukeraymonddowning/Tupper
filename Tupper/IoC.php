@@ -1,11 +1,11 @@
 <?php
 
-namespace Downing\Container;
+namespace Downing\Tupper;
 
-use Downing\Container\Bindings\IoCInitialBinder;
-use Downing\Container\Bindings\IoCBindingInterface;
-use Downing\Container\Bindings\BindingResolutionFactory;
-use Downing\Container\Exceptions\UnboundDependencyRequestedException;
+use Downing\Tupper\Bindings\IoCInitialBinder;
+use Downing\Tupper\Bindings\IoCBindingInterface;
+use Downing\Tupper\Bindings\BindingResolutionFactory;
+use Downing\Tupper\Exceptions\UnboundDependencyRequestedException;
 
 class IoC {
 

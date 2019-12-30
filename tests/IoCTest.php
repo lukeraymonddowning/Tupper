@@ -1,15 +1,15 @@
 <?php
 
-use Downing\Container\IoC;
+use Downing\Tupper\IoC;
 use PHPUnit\Framework\TestCase;
-use Downing\Container\Fakes\EmptyClass;
-use Downing\Container\Bindings\IoCBinding;
-use Downing\Container\Fakes\EmptyInterface;
-use Downing\Container\Bindings\IoCBindingInterface;
-use Downing\Container\Fakes\DependantWithDependancies;
-use Downing\Container\Fakes\DependantWithDependanciesInterface;
-use Downing\Container\Exceptions\ResolutionNotProvidedException;
-use Downing\Container\Exceptions\UnboundDependencyRequestedException;
+use Downing\Tupper\Fakes\EmptyClass;
+use Downing\Tupper\Bindings\IoCBinding;
+use Downing\Tupper\Fakes\EmptyInterface;
+use Downing\Tupper\Bindings\IoCBindingInterface;
+use Downing\Tupper\Fakes\DependantWithDependancies;
+use Downing\Tupper\Fakes\DependantWithDependanciesInterface;
+use Downing\Tupper\Exceptions\ResolutionNotProvidedException;
+use Downing\Tupper\Exceptions\UnboundDependencyRequestedException;
 
 class IoCTest extends TestCase {
 
