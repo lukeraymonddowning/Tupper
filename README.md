@@ -77,7 +77,7 @@ $ioc->remove(YourAbstraction::class);
 # Advanced Usage
 
 When you resolve a dependency through the container, it will attempt to resolve any dependencies of that dependency through the container too. This allows for nested dependencies, which can be very powerful. 
-You do not need to bind a class if it does not rely on an implementation. The container will automatically resolve it for you upon request, even if it has its own dependencies.
+*You do not need to bind a class if it does not rely on an implementation. The container will automatically resolve it for you upon request, even if it has its own dependencies.*
 
 ```
 class DependencyWithDependencies {
