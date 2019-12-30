@@ -23,7 +23,7 @@
 
     <filter>
         <whitelist addUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">Container</directory>
+            <directory suffix=".php">Tupper</directory>
         </whitelist>
     </filter>
 
