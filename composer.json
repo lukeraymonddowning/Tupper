@@ -1,5 +1,5 @@
 {
-    "name": "Downing/Tupper",
+    "name": "downing/tupper",
     "description": "A simple, no-nonsense IoC Container written in PHP for Dependency Injection",
     "type": "library",
     "license": "MIT",
