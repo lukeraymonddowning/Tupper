@@ -101,7 +101,7 @@ $dependency = $ioc->request(DependencyWithDependencies::class);
 $dependencyOfDependency = $dependency->dependency;
 ```
 
-Additionally, bindings that provide a Closure are resolved in the same manner. This allows you to request dependencies in the closure parameters and have them automatically resolved for you to use. You may, of course, request a binding from the container inside the Closure too.
+Bindings that provide a Closure are resolved in the same manner. This allows you to request dependencies in the closure parameters and have them automatically resolved for you to use. You may, of course, request a binding from the container inside the Closure too.
 
 ```
 $ioc->whenGiven(YourAbstraction::class)
