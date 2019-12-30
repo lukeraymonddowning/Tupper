@@ -17,4 +17,10 @@
         </testsuite>
     </testsuites>
 
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">Container</directory>
+        </whitelist>
+    </filter>
+
 </phpunit>
