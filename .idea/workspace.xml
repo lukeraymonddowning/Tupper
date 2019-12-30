@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff6bb8a6-f1bd-43b3-9310-439e652b7435" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Bindings/BindingResolutionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Bindings/BindingResolutionFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Bindings/IoCBinding.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Bindings/IoCBinding.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Bindings/IoCBindingInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Bindings/IoCBindingInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Bindings/IoCInitialBinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Bindings/IoCInitialBinder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Bindings/IoCProvidingInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Bindings/IoCProvidingInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Exceptions/ResolutionNotProvidedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Exceptions/ResolutionNotProvidedException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Exceptions/UnboundDependencyRequestedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Exceptions/UnboundDependencyRequestedException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Fakes/DependantWithDependancies.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Fakes/DependantWithDependancies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Fakes/DependantWithDependanciesInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Fakes/DependantWithDependanciesInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Fakes/EmptyClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Fakes/EmptyClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/Fakes/EmptyInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Fakes/EmptyInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container/IoC.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/IoC.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,10 +19,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="2090">
+                <caret line="107" column="46" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -46,18 +37,20 @@
       <find>Container\</find>
       <find>Requested</find>
       <find>namespace Container;</find>
+      <find>Downing\Container</find>
     </findStrings>
     <replaceStrings>
       <replace>Downing\Container\</replace>
       <replace>Given</replace>
       <replace>namespace Downing\Container;</replace>
+      <replace>Downing\Tupper</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="package_rename" />
       </map>
     </option>
   </component>
@@ -82,8 +75,9 @@
         <option value="$PROJECT_DIR$/Container/Bindings/IoCBinding.php" />
         <option value="$PROJECT_DIR$/Container/Bindings/IoCBindingInterface.php" />
         <option value="$PROJECT_DIR$/Container/Bindings/BindingResolutionFactory.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/Tupper/Bindings/BindingResolutionFactory.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -106,29 +100,6 @@
             <path>
               <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
               <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
-              <item name="Tupper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
-              <item name="Tupper" type="462c0819:PsiDirectoryNode" />
-              <item name="Bindings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
-              <item name="Tupper" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
-              <item name="Tupper" type="462c0819:PsiDirectoryNode" />
-              <item name="Fakes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.IoCTest" />
         <item itemvalue="PHPUnit.IoCTest.it_can_bind_arrays" />
         <item itemvalue="PHPUnit.IoCTest.it_can_bind_booleans" />
         <item itemvalue="PHPUnit.IoCTest.it_can_bind_floats" />
         <item itemvalue="PHPUnit.IoCTest.it_can_bind_integers" />
-        <item itemvalue="PHPUnit.IoCTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +180,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577610690582</updated>
-      <workItem from="1577610691949" duration="21864000" />
+      <workItem from="1577610691949" duration="22349000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed whenRequested to whenGiven for nicer syntax">
       <created>1577697644754</created>
@@ -400,22 +371,24 @@
       <option name="project" value="LOCAL" />
       <updated>1577706435192</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Altered package name">
+      <created>1577706759402</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1577706759402</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Updated readme">
+      <created>1577706830397</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1577706830397</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IoCTest_it_can_bind_arrays - 2019.12.30 at 09h 35m 58s.xml">
-      <configuration name="IoCTest.it_can_bind_arrays" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="IoCTest_it_can_bind_arrays - 2019.12.30 at 09h 36m 38s.xml">
-      <configuration name="IoCTest.it_can_bind_arrays" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="IoCTest_it_can_bind_arrays - 2019.12.30 at 09h 37m 22s.xml">
-      <configuration name="IoCTest.it_can_bind_arrays" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 09h 37m 39s.xml">
-      <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="IoCTest - 2019.12.30 at 09h 39m 04s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -434,9 +407,21 @@
     <history-entry file="IoCTest - 2019.12.30 at 11h 13m 12s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="IoCTest - 2019.12.30 at 11h 50m 43s.xml">
+      <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest - 2019.12.30 at 11h 51m 05s.xml">
+      <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest - 2019.12.30 at 11h 51m 19s.xml">
+      <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="IoCTest - 2019.12.30 at 11h 52m 43s.xml">
+      <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21864000" />
+    <option name="totallyTimeSpent" value="22349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -477,10 +462,11 @@
     <MESSAGE value="Added MIT license badge" />
     <MESSAGE value="Refactored to remove unnecessary interface method" />
     <MESSAGE value="Renamed to Tupper" />
-    <MESSAGE value="Updated readme" />
     <MESSAGE value="Updated composer.json" />
     <MESSAGE value="Updated Readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Readme" />
+    <MESSAGE value="Altered package name" />
+    <MESSAGE value="Updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated readme" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DependencyInjectionContainer$IoCTest.xml" NAME="IoCTest Coverage Results" MODIFIED="1577612198552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -611,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/BindingResolutionFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tupper/IoC.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -645,20 +624,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-1">
-            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/BindingResolutionFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="2090">
+            <caret line="107" column="46" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

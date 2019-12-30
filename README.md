@@ -17,7 +17,7 @@ This package is available via composer:
 `composer require downing/tupper`
 
 # Basic Usage
-To use this the container, create an instance of it in your project:
+To use the container, create an instance of it in your project:
 
 ```
 <?php
@@ -32,29 +32,6 @@ $ioc->whenGiven(YourAbstraction::class)
     ->provide(YourImplementation::class);
 ```
 
-You may bind almost any abstraction to any implementation, and it will be resolved for you. For example:
-
-```
-$ioc->whenGiven("foo")
-    ->provide("bar");
-```
-
-or...
-
-```
-$ioc->whenGiven(YourAbstraction::class)
-    ->provide(function() {
-      return new YourImplementation();
-    });
-```
-
-or even...
-
-```
-$ioc->whenGiven([1, 2, 3])
-    ->provide([3, 2, 1]);
-```
-
 To resolve a dependancy out of the container, you may do one the following:
 
 ```
@@ -63,6 +40,24 @@ $implementation = $ioc->request(YourAbstraction::class);
 
 // By invoking the class, which calls the request method behind the scenes
 $implementation = $ioc(YourAbstraction::class);
+```
+
+You may bind almost any abstraction to any implementation. Here are some examples:
+
+```
+// Binding a string
+$ioc->whenGiven("foo")
+    ->provide("bar");
+
+// Binding a closure, which will be executed when requested from the container
+$ioc->whenGiven(YourAbstraction::class)
+    ->provide(function() {
+      return new YourImplementation();
+    });
+
+// You can even bind an array
+$ioc->whenGiven([1, 2, 3])
+    ->provide([3, 2, 1]);
 ```
 
 You can check for the existence of a binding using the has method:
