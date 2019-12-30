@@ -4,6 +4,7 @@ namespace Downing\Tupper;
 
 use Downing\Tupper\Bindings\IoCInitialBinder;
 use Downing\Tupper\Bindings\IoCBindingInterface;
+use Downing\Tupper\Bindings\IoCProvidingInterface;
 use Downing\Tupper\Bindings\BindingResolutionFactory;
 use Downing\Tupper\Exceptions\UnboundDependencyRequestedException;
 
@@ -53,32 +54,35 @@ class IoC {
     {
         $request = $this->transformGivenRequestToSafeOffset($request);
 
-        if (isset($this->bindings[$request])) {
+        if ($this->has($request)) {
             return $this->resolveBinding($request);
         } else if (class_exists($request)) {
-            return $this->resolveClass($request);
+            return new $request;
         }
 
         throw new UnboundDependencyRequestedException();
     }
 
-    protected function resolveBinding($request) {
-        $response = $this->bindings[$request];
-        $binding = $response->getImplementationOrFail();
+    protected function resolveBinding($request)
+    {
+        $binding = $this->bindings[$request];
 
-        return (new BindingResolutionFactory($binding, $this))();
+        $implementation = $binding->getImplementationOrFail();
+        $resolution = (new BindingResolutionFactory($implementation, $this))();
+
+        return $this->retrieveSingletonOrNewInstance($binding, $resolution);
     }
 
-    protected function resolveClass($request) {
-        return new $request;
+    protected function retrieveSingletonOrNewInstance($binding, $resolution)
+    {
+        return $binding instanceof IoCProvidingInterface && $binding->isSingleton() ?
+            $binding->setSingletonIfEmpty($resolution)->getSingleton() :
+            $resolution;
     }
 
-    protected function transformGivenRequestToSafeOffset($request) {
-        if (is_array($request)) {
-            return serialize($request);
-        }
-
-        return $request;
+    protected function transformGivenRequestToSafeOffset($request)
+    {
+        return is_array($request) ? serialize($request) : $request;
     }
 
 }

@@ -76,6 +76,14 @@ $ioc->remove(YourAbstraction::class);
 
 # Advanced Usage
 
+Occasionally, you will want to bind a value into the container as a singleton. That is to say that every time you request 
+an implementation from the same instance of a container, it should return a single reference rather than a new instance. You may do so with the following syntax:
+
+```
+$ioc->whenGiven(YourAbstraction::class)
+    ->provideSingleton(YourImplementation::class)
+```
+
 When you resolve a dependency through the container, it will attempt to resolve any dependencies of that dependency through the container too. This allows for nested dependencies, which can be very powerful. 
 *You do not need to bind a class if it does not rely on an implementation. The container will automatically resolve it for you upon request, even if it has its own dependencies.*
 

@@ -7,13 +7,16 @@ use Downing\Tupper\Exceptions\ResolutionNotProvidedException;
 
 class IoCBinding implements IoCBindingInterface, IoCProvidingInterface {
 
-    private $implementationProvided = false;
-    private $implementation;
+    use CanBeSingleton;
 
-    public function provide($implementation): IoCProvidingInterface
+    private $implementationProvided = false, $implementation;
+
+    public function provide($implementation, $isSingleton = false): IoCProvidingInterface
     {
         $this->implementation = $implementation;
         $this->implementationProvided = true;
+        $this->makeSingleton($isSingleton);
+
         return $this;
     }
 

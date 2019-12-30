@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff6bb8a6-f1bd-43b3-9310-439e652b7435" name="Default Changelist" comment="Cleanup and refactor" />
+    <list default="true" id="ff6bb8a6-f1bd-43b3-9310-439e652b7435" name="Default Changelist" comment="Added singletons">
+      <change afterPath="$PROJECT_DIR$/Tupper/Bindings/CanBeSingleton.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tupper/Bindings/IoCBinding.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Bindings/IoCBinding.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tupper/Bindings/IoCInitialBinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Bindings/IoCInitialBinder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tupper/Bindings/IoCProvidingInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/Bindings/IoCProvidingInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tupper/IoC.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tupper/IoC.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/IoCTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IoCTest.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +21,22 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="591">
+                <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -31,7 +56,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="package_rename" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -46,7 +71,6 @@
         <option value="$PROJECT_DIR$/Container/Exceptions/ResolutionNotProvidedException.php" />
         <option value="$PROJECT_DIR$/Container/Exceptions/UnboundDependencyRequestedException.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/tests/IoCTest.php" />
         <option value="$PROJECT_DIR$/Container/IoC.php" />
         <option value="$PROJECT_DIR$/.coveralls.yml" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
@@ -58,6 +82,13 @@
         <option value="$PROJECT_DIR$/Container/Bindings/BindingResolutionFactory.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/Tupper/Bindings/BindingResolutionFactory.php" />
+        <option value="$PROJECT_DIR$/tests/IoCTest.php" />
+        <option value="$PROJECT_DIR$/Tupper/Bindings/IoCBinding.php" />
+        <option value="$PROJECT_DIR$/Tupper/Bindings/IoCBindingInterface.php" />
+        <option value="$PROJECT_DIR$/Tupper/Bindings/IoCInitialBinder.php" />
+        <option value="$PROJECT_DIR$/Tupper/Bindings/IoCProvidingInterface.php" />
+        <option value="$PROJECT_DIR$/Tupper/Bindings/CanBeSingleton.php" />
+        <option value="$PROJECT_DIR$/Tupper/IoC.php" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -136,6 +167,10 @@
       <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" scope="Class" />
       <method v="2" />
     </configuration>
+    <configuration name="IoCTest.it_can_accept_a_singleton" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="it_can_accept_a_singleton" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="IoCTest.it_can_bind_arrays" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="it_can_bind_arrays" scope="Method" />
       <method v="2" />
@@ -144,21 +179,17 @@
       <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="it_can_bind_booleans" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="IoCTest.it_can_bind_floats" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="it_can_bind_floats" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="IoCTest.it_can_bind_integers" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="it_can_bind_integers" scope="Method" />
+    <configuration name="IoCTest.when_it_is_not_a_singleton_it_returns_new_instances" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="IoCTest" file="$PROJECT_DIR$/tests/IoCTest.php" method="when_it_is_not_a_singleton_it_returns_new_instances" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.IoCTest" />
+        <item itemvalue="PHPUnit.IoCTest.when_it_is_not_a_singleton_it_returns_new_instances" />
+        <item itemvalue="PHPUnit.IoCTest.it_can_accept_a_singleton" />
         <item itemvalue="PHPUnit.IoCTest.it_can_bind_arrays" />
         <item itemvalue="PHPUnit.IoCTest.it_can_bind_booleans" />
-        <item itemvalue="PHPUnit.IoCTest.it_can_bind_floats" />
-        <item itemvalue="PHPUnit.IoCTest.it_can_bind_integers" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577610690582</updated>
-      <workItem from="1577610691949" duration="22349000" />
+      <workItem from="1577610691949" duration="26593000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed whenRequested to whenGiven for nicer syntax">
       <created>1577697644754</created>
@@ -377,50 +408,77 @@
       <option name="project" value="LOCAL" />
       <updated>1577706830397</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Updated readme">
+      <created>1577707130751</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1577707130751</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Updated readme">
+      <created>1577707290488</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1577707290488</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Updated readme">
+      <created>1577707374749</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1577707374749</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IoCTest - 2019.12.30 at 09h 39m 04s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 43m 55s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 09h 40m 13s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 45m 00s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 09h 51m 21s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 46m 11s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 11h 12m 29s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 46m 38s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 11h 12m 54s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 46m 39s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 11h 13m 12s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 46m 51s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 11h 50m 43s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 48m 15s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 11h 51m 05s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 48m 39s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 11h 51m 19s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 50m 59s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="IoCTest - 2019.12.30 at 11h 52m 43s.xml">
+    <history-entry file="IoCTest - 2019.12.30 at 19h 52m 50s.xml">
       <configuration name="IoCTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22365000" />
+    <option name="totallyTimeSpent" value="26593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32982457" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32982457" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32982457" />
@@ -428,17 +486,12 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32982457" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32982457" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Remote Host" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +523,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Classes/EmptyClass.php" />
+    <entry file="file://$PROJECT_DIR$/tests/Classes/EmptyClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -499,13 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tupper/Fakes/EmptyClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -558,57 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/IoCBindingInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/IoCBinding.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#46#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/IoCInitialBinder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tupper/IoC.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-          <folding>
-            <element signature="e#37#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/IoCProvidingInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/IoCTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2599">
-          <caret line="113" column="15" lean-forward="true" selection-start-line="113" selection-start-column="15" selection-end-line="113" selection-end-column="15" />
-          <folding>
-            <element signature="e#7#33#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -616,18 +617,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/BindingResolutionFactory.php">
+    <entry file="file://$PROJECT_DIR$/Tupper/Fakes/EmptyClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/IoCBindingInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/IoCInitialBinder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/BindingResolutionFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#44#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/IoCProvidingInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/IoCTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="203" column="50" lean-forward="true" selection-start-line="203" selection-start-column="50" selection-end-line="203" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/IoCBinding.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="e#43#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tupper/Bindings/CanBeSingleton.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tupper/IoC.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#34#79#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="2090">
-            <caret line="107" column="46" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
+          <first_editor relative-caret-position="591">
+            <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>
