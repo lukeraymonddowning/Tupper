@@ -115,3 +115,7 @@ $ioc->whenGiven(YourAbstraction::class)
 ```
 
 This package has a full test suite written in PhpUnit, so please feel free to view the tests for advanced usage and to see what is possible.
+
+# Get in Touch
+
+If you have questions, suggestions or just want to chat, find me on Twitter [@LukeDowning19](https://twitter.com/LukeDowning19)
