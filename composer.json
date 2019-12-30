@@ -1,5 +1,5 @@
 {
-    "name": "lukedowning/dependency-injection-container",
+    "name": "Downing/Tupper",
     "description": "A simple, no-nonsense IoC Container written in PHP for Dependency Injection",
     "type": "library",
     "license": "MIT",

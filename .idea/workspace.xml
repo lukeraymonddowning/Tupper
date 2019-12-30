@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff6bb8a6-f1bd-43b3-9310-439e652b7435" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,13 +19,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="23">
-                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -60,7 +58,6 @@
         <option value="$PROJECT_DIR$/tests/IoCTest.php" />
         <option value="$PROJECT_DIR$/Container/IoC.php" />
         <option value="$PROJECT_DIR$/.coveralls.yml" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/Container/Bindings/IoCInitialBinder.php" />
@@ -69,6 +66,7 @@
         <option value="$PROJECT_DIR$/Container/Bindings/IoCBindingInterface.php" />
         <option value="$PROJECT_DIR$/Container/Bindings/BindingResolutionFactory.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -199,7 +197,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577610690582</updated>
-      <workItem from="1577610691949" duration="20288000" />
+      <workItem from="1577610691949" duration="21367000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed whenRequested to whenGiven for nicer syntax">
       <created>1577697644754</created>
@@ -341,7 +339,28 @@
       <option name="project" value="LOCAL" />
       <updated>1577704491901</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Renamed to Tupper">
+      <created>1577704865459</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1577704865459</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Renamed to Tupper">
+      <created>1577704897962</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1577704897962</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Updated readme">
+      <created>1577705886952</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1577705886952</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -377,7 +396,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20288000" />
+    <option name="totallyTimeSpent" value="21367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -417,7 +436,9 @@
     <MESSAGE value="Added coveralls" />
     <MESSAGE value="Added MIT license badge" />
     <MESSAGE value="Refactored to remove unnecessary interface method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored to remove unnecessary interface method" />
+    <MESSAGE value="Renamed to Tupper" />
+    <MESSAGE value="Updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated readme" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DependencyInjectionContainer$IoCTest.xml" NAME="IoCTest Coverage Results" MODIFIED="1577612198552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -513,13 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpunit.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -538,13 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Container/Bindings/IoCProvidingInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -589,13 +596,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Container/Bindings/IoCProvidingInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="23">
-            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <first_editor relative-caret-position="416">
+            <caret line="110" column="3" lean-forward="true" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
