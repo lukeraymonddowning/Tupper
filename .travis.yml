@@ -6,8 +6,8 @@ before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction
 script: phpunit --coverage-clover ./tests/logs/clover.xml
-after_script:
-  - php vendor/bin/coveralls -v
+after_success:
+  - travis_retry php vendor/bin/php-coveralls -v
 cache:
   directories:
     - $HOME/.composer/cache/files
