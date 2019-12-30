@@ -14,7 +14,7 @@ More often than not, you'll want a IoC container that allows you to manage these
 # Installation
 This package is available via composer:
 
-`composer require lukedowning/dependency-injection-container`
+`composer require downing/tupper`
 
 # Basic Usage
 To use this the container, create an instance of it in your project:
