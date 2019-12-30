@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff6bb8a6-f1bd-43b3-9310-439e652b7435" name="Default Changelist" comment="" />
+    <list default="true" id="ff6bb8a6-f1bd-43b3-9310-439e652b7435" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +20,11 @@
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -56,6 +63,7 @@
         <option value="$PROJECT_DIR$/tests/IoCTest.php" />
         <option value="$PROJECT_DIR$/Container/IoC.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -186,7 +194,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577610690582</updated>
-      <workItem from="1577610691949" duration="15675000" />
+      <workItem from="1577610691949" duration="16245000" />
     </task>
     <task id="LOCAL-00001" summary="Renamed whenRequested to whenGiven for nicer syntax">
       <created>1577697644754</created>
@@ -209,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577699626938</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a travis yaml file">
+      <created>1577699941592</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577699941592</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added a travis yaml file">
+      <created>1577700098262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577700098262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -245,7 +267,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15675000" />
+    <option name="totallyTimeSpent" value="16245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -280,7 +302,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Renamed whenRequested to whenGiven for nicer syntax" />
     <MESSAGE value="Added more tests and ability to bind arrays into the container." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more tests and ability to bind arrays into the container." />
+    <MESSAGE value="Added a travis yaml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a travis yaml file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DependencyInjectionContainer$IoCTest.xml" NAME="IoCTest Coverage Results" MODIFIED="1577612198552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -428,7 +451,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
