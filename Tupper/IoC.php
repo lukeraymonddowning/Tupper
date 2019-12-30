@@ -4,8 +4,8 @@ namespace Downing\Tupper;
 
 use Downing\Tupper\Bindings\IoCInitialBinder;
 use Downing\Tupper\Bindings\IoCBindingInterface;
-use Downing\Tupper\Bindings\BindingResolutionFactory;
 use Downing\Tupper\Bindings\IoCProvidingInterface;
+use Downing\Tupper\Bindings\BindingResolutionFactory;
 use Downing\Tupper\Exceptions\UnboundDependencyRequestedException;
 
 class IoC {
@@ -54,10 +54,10 @@ class IoC {
     {
         $request = $this->transformGivenRequestToSafeOffset($request);
 
-        if (isset($this->bindings[$request])) {
+        if ($this->has($request)) {
             return $this->resolveBinding($request);
         } else if (class_exists($request)) {
-            return $this->resolveClass($request);
+            return new $request;
         }
 
         throw new UnboundDependencyRequestedException();
@@ -80,18 +80,9 @@ class IoC {
             $resolution;
     }
 
-    protected function resolveClass($request)
-    {
-        return new $request;
-    }
-
     protected function transformGivenRequestToSafeOffset($request)
     {
-        if (is_array($request)) {
-            return serialize($request);
-        }
-
-        return $request;
+        return is_array($request) ? serialize($request) : $request;
     }
 
 }
