@@ -8,4 +8,5 @@ class IoCInitialBinder implements IoCBindingInterface {
     {
         return IoCBinding::class;
     }
+
 }
