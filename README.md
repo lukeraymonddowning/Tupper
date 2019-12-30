@@ -1,9 +1,7 @@
 # Dependency Injection Container for PHP
 
-<p align="center">
 [![Build Status](https://travis-ci.org/lukeraymonddowning/DependencyInjectionContainer.svg?branch=master)](https://travis-ci.org/lukeraymonddowning/DependencyInjectionContainer)
 [![Coverage Status](https://coveralls.io/repos/github/lukeraymonddowning/DependencyInjectionContainer/badge.svg?branch=master)](https://coveralls.io/github/lukeraymonddowning/DependencyInjectionContainer?branch=master)
-</p>
 
 A simple, no-nonsense IoC Container written in PHP for Dependency Injection (DI).
 
