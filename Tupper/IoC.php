@@ -5,7 +5,7 @@ namespace Downing\Tupper;
 use Downing\Tupper\Bindings\IoCInitialBinder;
 use Downing\Tupper\Bindings\IoCBindingInterface;
 use Downing\Tupper\Bindings\IoCProvidingInterface;
-use Downing\Tupper\Bindings\BindingResolutionFactory;
+use Downing\Tupper\ResolutionFactory\BindingResolutionFactory;
 use Downing\Tupper\Exceptions\UnboundDependencyRequestedException;
 
 class IoC {
