@@ -103,3 +103,5 @@ $ioc->whenGiven(YourAbstraction::class)
       return new Decorator($dependency);
     });
 ```
+
+This package has a full test suite written in PhpUnit, so please feel free to view the tests for advanced usage and to see what is possible.
