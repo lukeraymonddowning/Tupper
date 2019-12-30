@@ -1,11 +1,11 @@
 <?php
 
-namespace Container;
+namespace Downing\Container;
 
-use Container\Bindings\IoCInitialBinder;
-use Container\Bindings\IoCBindingInterface;
-use Container\Bindings\BindingResolutionFactory;
-use Container\Exceptions\UnboundDependencyRequestedException;
+use Downing\Container\Bindings\IoCInitialBinder;
+use Downing\Container\Bindings\IoCBindingInterface;
+use Downing\Container\Bindings\BindingResolutionFactory;
+use Downing\Container\Exceptions\UnboundDependencyRequestedException;
 
 class IoC {
 
@@ -32,7 +32,7 @@ class IoC {
             unset($this->bindings[$request]);
     }
 
-    public function whenRequested($request)
+    public function whenGiven($request)
     {
         $binding = $this(IoCBindingInterface::class);
         $this->bindings[$request] = $binding;

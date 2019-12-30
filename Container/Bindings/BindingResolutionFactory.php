@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Container\Bindings;
+namespace Downing\Container\Bindings;
 
 
 use Closure;
-use Container\IoC;
+use Downing\Container\IoC;
 use ReflectionClass;
 use ReflectionFunction;
 use ReflectionParameter;

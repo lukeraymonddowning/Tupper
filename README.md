@@ -22,21 +22,21 @@ $ioc = new Downing\Container\IoC();
 Then, during your system registration, you'll want to register your dependencies. You can do so using the following syntax:
 
 ```
-$ioc->whenRequested(YourAbstraction::class)
+$ioc->whenGiven(YourAbstraction::class)
     ->provide(YourImplementation::class);
 ```
 
 You may bind almost any abstraction to any implementation, and it will be resolved for you. For example:
 
 ```
-$ioc->whenRequested("foo")
+$ioc->whenGiven("foo")
     ->provide("bar");
 ```
 
 or...
 
 ```
-$ioc->whenRequested(YourAbstraction::class)
+$ioc->whenGiven(YourAbstraction::class)
     ->provide(function() {
       return new YourImplementation();
     });
@@ -67,7 +67,7 @@ class DependencyWithDependencies {
   
 }
 
-$ioc->whenRequested(DependencyInterface::class)
+$ioc->whenGiven(DependencyInterface::class)
     ->provide(DependencyImplementation::class);
     
 $dependency = $ioc->request(DependencyWithDependencies::class);
@@ -77,7 +77,7 @@ $dependencyOfDependency = $dependency->dependency;
 Additionally, bindings that provide a Closure are resolved in the same manner. This allows you to request dependencies in the closure parameters and have them automatically resolved for you to use. You may, of course, request a binding from the container inside the Closure too.
 
 ```
-$ioc->whenRequested(YourAbstraction::class)
+$ioc->whenGiven(YourAbstraction::class)
     ->provide(function(Dependency $dependency) {
       return new Decorator($dependency);
     });

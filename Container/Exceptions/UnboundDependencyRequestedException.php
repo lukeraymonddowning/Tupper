@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Container\Exceptions;
+namespace Downing\Container\Exceptions;
 
 
 use Exception;

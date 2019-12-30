@@ -1,9 +1,9 @@
 <?php
 
-namespace Container\Bindings;
+namespace Downing\Container\Bindings;
 
 use ReflectionException;
-use Container\Exceptions\ResolutionNotProvidedException;
+use Downing\Container\Exceptions\ResolutionNotProvidedException;
 
 class IoCBinding implements IoCBindingInterface {
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Container\Fakes;
+namespace Downing\Container\Fakes;
 
 
 class DependantWithDependancies implements DependantWithDependanciesInterface {

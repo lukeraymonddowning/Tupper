@@ -1,6 +1,6 @@
 <?php
 
-namespace Container\Bindings;
+namespace Downing\Container\Bindings;
 
 class IoCInitialBinder implements IoCBindingInterface {
 
