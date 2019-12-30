@@ -24,7 +24,7 @@ class BindingResolutionFactory {
     {
         if ($this->binding instanceof Closure) {
             return $this->resolveClosure();
-        } else if (class_exists($this->binding)) {
+        } else if (is_string($this->binding) && class_exists($this->binding)) {
             return $this->resolveClass();
         }
 

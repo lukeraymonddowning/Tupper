@@ -42,6 +42,13 @@ $ioc->whenGiven(YourAbstraction::class)
     });
 ```
 
+or even...
+
+```
+$ioc->whenGiven([1, 2, 3])
+    ->provide([3, 2, 1]);
+```
+
 To resolve a dependancy out of the container, you may do one the following:
 
 ```
@@ -50,6 +57,20 @@ $implementation = $ioc->request(YourAbstraction::class);
 
 // By invoking the class, which calls the request method behind the scenes
 $implementation = $ioc(YourAbstraction::class);
+```
+
+You can check for the existence of a binding using the has method:
+
+```
+if ($ioc->has(YourAbstraction::class)) {
+    // Do something...
+}
+```
+
+You can also remove an existing binding using the remove method:
+
+```
+$ioc->remove(YourAbstraction::class);
 ```
 
 # Advanced Usage

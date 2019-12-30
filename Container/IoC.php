@@ -16,11 +16,6 @@ class IoC {
         $this->bindings[IoCBindingInterface::class] = new IoCInitialBinder();
     }
 
-    public function __invoke($request)
-    {
-        return $this->request($request);
-    }
-
     public function has($request)
     {
         return isset($this->bindings[$request]);
@@ -34,14 +29,30 @@ class IoC {
 
     public function whenGiven($request)
     {
+        $request = $this->transformGivenRequestToSafeOffset($request);
+
         $binding = $this(IoCBindingInterface::class);
         $this->bindings[$request] = $binding;
 
         return $binding;
     }
 
+    public function __invoke($request)
+    {
+        return $this->request($request);
+    }
+
+    /**
+     * Returns the requested implementation from the container if able.
+     *
+     * @param $request
+     * @throws UnboundDependencyRequestedException
+     * @return mixed
+     */
     public function request($request)
     {
+        $request = $this->transformGivenRequestToSafeOffset($request);
+
         if (isset($this->bindings[$request])) {
             return $this->resolveBinding($request);
         } else if (class_exists($request)) {
@@ -60,6 +71,14 @@ class IoC {
 
     protected function resolveClass($request) {
         return new $request;
+    }
+
+    protected function transformGivenRequestToSafeOffset($request) {
+        if (is_array($request)) {
+            return serialize($request);
+        }
+
+        return $request;
     }
 
 }
