@@ -1,4 +1,4 @@
-# Tupper - the Dependency Injection container for PHP
+# Tupper: the Dependency Injection container for PHP
 
 
 [![Build Status](https://travis-ci.org/lukeraymonddowning/DependencyInjectionContainer.svg?branch=master)](https://travis-ci.org/lukeraymonddowning/DependencyInjectionContainer)
