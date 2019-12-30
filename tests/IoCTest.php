@@ -198,4 +198,20 @@ class IoCTest extends TestCase {
         $this->assertEquals([3, 2, 1], $this->ioc->request([1, 2, 3]));
     }
 
+    /** @test */
+    public function it_can_accept_a_singleton() {
+        $this->ioc->whenGiven(EmptyInterface::class)
+            ->provideSingleton(EmptyClass::class);
+
+        $this->assertSame($this->ioc->request(EmptyInterface::class), $this->ioc->request(EmptyInterface::class));
+    }
+
+    /** @test */
+    public function when_it_is_not_a_singleton_it_returns_new_instances() {
+        $this->ioc->whenGiven(EmptyInterface::class)
+                  ->provide(EmptyClass::class);
+
+        $this->assertNotSame($this->ioc->request(EmptyInterface::class), $this->ioc->request(EmptyInterface::class));
+    }
+
 }
