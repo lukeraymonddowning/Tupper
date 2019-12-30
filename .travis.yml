@@ -2,7 +2,7 @@ language: php
 php:
   - '7.4'
 before_script:
-  - composer require satooshi/php-coveralls:dev-master
+  - composer require php-coveralls/php-coveralls
   - composer self-update
   - composer install --prefer-source --no-interaction
 script: phpunit --coverage-clover ./tests/logs/clover.xml
