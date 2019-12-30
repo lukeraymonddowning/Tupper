@@ -1,4 +1,7 @@
 # Dependency Injection Container for PHP
+
+[![Build Status](https://travis-ci.org/lukeraymonddowning/DependencyInjectionContainer.svg?branch=master)](https://travis-ci.org/lukeraymonddowning/DependencyInjectionContainer)
+
 A simple, no-nonsense IoC Container written in PHP for Dependency Injection (DI).
 
 Dependency Injection and Dependency Inversion are powerful concepts that improve code readability, maintainability and stability.
