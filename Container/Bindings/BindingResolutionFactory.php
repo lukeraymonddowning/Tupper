@@ -1,14 +1,13 @@
 <?php
 
-
 namespace Downing\Container\Bindings;
 
 
 use Closure;
-use Downing\Container\IoC;
 use ReflectionClass;
 use ReflectionFunction;
 use ReflectionParameter;
+use Downing\Container\IoC;
 
 class BindingResolutionFactory {
 

@@ -5,12 +5,12 @@ namespace Downing\Container\Bindings;
 use ReflectionException;
 use Downing\Container\Exceptions\ResolutionNotProvidedException;
 
-class IoCBinding implements IoCBindingInterface {
+class IoCBinding implements IoCBindingInterface, IoCProvidingInterface {
 
     private $implementationProvided = false;
     private $implementation;
 
-    public function provide($implementation): IoCBindingInterface
+    public function provide($implementation): IoCProvidingInterface
     {
         $this->implementation = $implementation;
         $this->implementationProvided = true;
