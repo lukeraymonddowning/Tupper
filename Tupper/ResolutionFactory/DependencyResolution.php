@@ -1,14 +1,13 @@
 <?php
 
-
 namespace Downing\Tupper\ResolutionFactory;
-
 
 use ReflectionParameter;
 
-abstract class DependencyResolution implements BindingResolutionInterface {
-
-    protected $binding, $ioc;
+abstract class DependencyResolution implements BindingResolutionInterface
+{
+    protected $binding;
+    protected $ioc;
 
     public function __construct($binding, $ioc)
     {
@@ -22,5 +21,4 @@ abstract class DependencyResolution implements BindingResolutionInterface {
             return $this->ioc->request($parameter->getType()->getName());
         }, $dependancies);
     }
-
 }

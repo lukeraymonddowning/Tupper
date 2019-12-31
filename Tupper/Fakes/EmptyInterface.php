@@ -1,9 +1,7 @@
 <?php
 
-
 namespace Downing\Tupper\Fakes;
 
-
-interface EmptyInterface {
-
+interface EmptyInterface
+{
 }

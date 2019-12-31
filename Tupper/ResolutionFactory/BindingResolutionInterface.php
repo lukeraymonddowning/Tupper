@@ -1,13 +1,10 @@
 <?php
 
-
 namespace Downing\Tupper\ResolutionFactory;
 
-
-interface BindingResolutionInterface {
-
+interface BindingResolutionInterface
+{
     public function __construct($binding, $ioc);
 
     public function resolve();
-
 }
