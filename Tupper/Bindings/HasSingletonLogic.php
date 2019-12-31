@@ -1,12 +1,11 @@
 <?php
 
-
 namespace Downing\Tupper\Bindings;
 
-
-trait HasSingletonLogic {
-
-    protected $isSingleton = false, $singletonValue;
+trait HasSingletonLogic
+{
+    protected $isSingleton = false;
+    protected $singletonValue;
 
     public function isSingleton(): bool
     {
@@ -15,8 +14,9 @@ trait HasSingletonLogic {
 
     public function setSingletonIfEmpty($value): IoCProvidingInterface
     {
-        if (empty($this->singletonValue))
+        if (empty($this->singletonValue)) {
             $this->singletonValue = $value;
+        }
 
         return $this;
     }
@@ -30,5 +30,4 @@ trait HasSingletonLogic {
     {
         $this->isSingleton = $singleton;
     }
-
 }
