@@ -1,7 +1,7 @@
 # Tupper: the Dependency Injection container for PHP
 
 
-[![Build Status](https://travis-ci.org/lukeraymonddowning/DependencyInjectionContainer.svg?branch=master)](https://travis-ci.org/lukeraymonddowning/DependencyInjectionContainer)
+[![Build Status](https://travis-ci.org/lukeraymonddowning/Tupper.svg?branch=master)](https://travis-ci.org/lukeraymonddowning/Tupper)
 [![Coverage Status](https://coveralls.io/repos/github/lukeraymonddowning/Tupper/badge.svg?branch=master)](https://coveralls.io/github/lukeraymonddowning/Tupper?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
