@@ -32,7 +32,7 @@ $ioc->whenGiven(YourAbstraction::class)
     ->provide(YourImplementation::class);
 ```
 
-To resolve a dependancy out of the container, you may do one the following:
+To resolve a dependency out of the container, you may do one the following:
 
 ```
 // Using the request method

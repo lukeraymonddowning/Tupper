@@ -18,10 +18,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/IoCTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="545">
+                <caret line="47" selection-start-line="47" selection-end-line="59" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -77,7 +80,6 @@
         <option value="$PROJECT_DIR$/Tupper/Bindings/IoCProvidingInterface.php" />
         <option value="$PROJECT_DIR$/Tupper/Bindings/CanBeSingleton.php" />
         <option value="$PROJECT_DIR$/Tupper/IoC.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Tupper/Bindings/BindingResolutionFactory.php" />
         <option value="$PROJECT_DIR$/Tupper/ResolutionFactory/ClassResolution.php" />
         <option value="$PROJECT_DIR$/Tupper/ResolutionFactory/DependencyResolution.php" />
@@ -86,6 +88,7 @@
         <option value="$PROJECT_DIR$/Tupper/ResolutionFactory/ClosureResolution.php" />
         <option value="$PROJECT_DIR$/Tupper/ResolutionFactory/BindingResolutionFactory.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -113,11 +116,6 @@
               <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
               <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DependencyInjectionContainer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DependencyInjectionContainer" type="462c0819:PsiDirectoryNode" />
-              <item name="Tupper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -438,7 +436,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577738544230</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Updated PhpUnit xml">
+      <created>1577740150507</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1577740150507</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Updated Readme">
+      <created>1577740713522</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1577740713522</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -474,7 +486,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29200000" />
+    <option name="totallyTimeSpent" value="31262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -516,13 +528,13 @@
     <MESSAGE value="Refactored to remove unnecessary interface method" />
     <MESSAGE value="Renamed to Tupper" />
     <MESSAGE value="Updated composer.json" />
-    <MESSAGE value="Updated Readme" />
     <MESSAGE value="Altered package name" />
     <MESSAGE value="Updated readme" />
     <MESSAGE value="Cleanup and refactor" />
     <MESSAGE value="Refactored BindingResolutionFactory to use an interface" />
     <MESSAGE value="Updated PhpUnit xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated PhpUnit xml" />
+    <MESSAGE value="Updated Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Readme" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DependencyInjectionContainer$IoCTest.xml" NAME="IoCTest Coverage Results" MODIFIED="1577612198552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -651,16 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="591">
-            <caret line="98" column="1" lean-forward="true" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tupper/Bindings/IoCBinding.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -735,8 +737,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/IoCTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="69">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="545">
+            <caret line="47" selection-start-line="47" selection-end-line="59" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
