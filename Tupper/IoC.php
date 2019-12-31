@@ -2,14 +2,14 @@
 
 namespace Downing\Tupper;
 
-use Downing\Tupper\Bindings\IoCInitialBinder;
 use Downing\Tupper\Bindings\IoCBindingInterface;
+use Downing\Tupper\Bindings\IoCInitialBinder;
 use Downing\Tupper\Bindings\IoCProvidingInterface;
-use Downing\Tupper\ResolutionFactory\BindingResolutionFactory;
 use Downing\Tupper\Exceptions\UnboundDependencyRequestedException;
+use Downing\Tupper\ResolutionFactory\BindingResolutionFactory;
 
-class IoC {
-
+class IoC
+{
     protected $bindings = [];
 
     public function __construct()
@@ -24,8 +24,9 @@ class IoC {
 
     public function remove($request)
     {
-        if ($this->has($request))
+        if ($this->has($request)) {
             unset($this->bindings[$request]);
+        }
     }
 
     public function whenGiven($request)
@@ -47,7 +48,9 @@ class IoC {
      * Returns the requested implementation from the container if able.
      *
      * @param $request
+     *
      * @throws UnboundDependencyRequestedException
+     *
      * @return mixed
      */
     public function request($request)
@@ -56,8 +59,8 @@ class IoC {
 
         if ($this->has($request)) {
             return $this->resolveBinding($request);
-        } else if (class_exists($request)) {
-            return new $request;
+        } elseif (class_exists($request)) {
+            return new $request();
         }
 
         throw new UnboundDependencyRequestedException();
@@ -84,5 +87,4 @@ class IoC {
     {
         return is_array($request) ? serialize($request) : $request;
     }
-
 }

@@ -2,8 +2,7 @@
 
 namespace Downing\Tupper\Bindings;
 
-interface IoCBindingInterface {
-
+interface IoCBindingInterface
+{
     public function getImplementationOrFail();
-
 }

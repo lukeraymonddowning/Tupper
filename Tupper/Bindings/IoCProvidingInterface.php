@@ -1,11 +1,9 @@
 <?php
 
-
 namespace Downing\Tupper\Bindings;
 
-
-interface IoCProvidingInterface {
-
+interface IoCProvidingInterface
+{
     public function provide($implementation, $isSingleton = false): self;
 
     public function provideSingleton($implementation): self;
@@ -15,5 +13,4 @@ interface IoCProvidingInterface {
     public function setSingletonIfEmpty($value): self;
 
     public function getSingleton();
-
 }

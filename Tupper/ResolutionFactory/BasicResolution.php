@@ -1,12 +1,11 @@
 <?php
 
-
 namespace Downing\Tupper\ResolutionFactory;
 
-
-class BasicResolution implements BindingResolutionInterface {
-
-    protected $binding, $ioc;
+class BasicResolution implements BindingResolutionInterface
+{
+    protected $binding;
+    protected $ioc;
 
     public function __construct($binding, $ioc)
     {

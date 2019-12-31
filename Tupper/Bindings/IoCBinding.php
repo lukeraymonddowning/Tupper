@@ -2,14 +2,15 @@
 
 namespace Downing\Tupper\Bindings;
 
-use ReflectionException;
 use Downing\Tupper\Exceptions\ResolutionNotProvidedException;
+use ReflectionException;
 
-class IoCBinding implements IoCBindingInterface, IoCProvidingInterface {
-
+class IoCBinding implements IoCBindingInterface, IoCProvidingInterface
+{
     use CanBeSingleton;
 
-    private $implementationProvided = false, $implementation;
+    private $implementationProvided = false;
+    private $implementation;
 
     public function provide($implementation, $isSingleton = false): IoCProvidingInterface
     {
@@ -23,12 +24,14 @@ class IoCBinding implements IoCBindingInterface, IoCProvidingInterface {
     /**
      * @throws ResolutionNotProvidedException
      * @throws ReflectionException
+     *
      * @return mixed
      */
     public function getImplementationOrFail()
     {
-        if (!$this->implementationProvided)
+        if (!$this->implementationProvided) {
             throw new ResolutionNotProvidedException($this);
+        }
 
         return $this->implementation;
     }

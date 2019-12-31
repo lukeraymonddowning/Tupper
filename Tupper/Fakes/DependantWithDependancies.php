@@ -1,11 +1,9 @@
 <?php
 
-
 namespace Downing\Tupper\Fakes;
 
-
-class DependantWithDependancies implements DependantWithDependanciesInterface {
-
+class DependantWithDependancies implements DependantWithDependanciesInterface
+{
     public $dependency;
 
     public function __construct(EmptyInterface $dependency)

@@ -1,12 +1,11 @@
 <?php
 
-
 namespace Downing\Tupper\Bindings;
 
-
-trait CanBeSingleton {
-
-    protected $isSingleton = false, $singletonValue;
+trait CanBeSingleton
+{
+    protected $isSingleton = false;
+    protected $singletonValue;
 
     public function provideSingleton($implementation): IoCProvidingInterface
     {
@@ -20,8 +19,9 @@ trait CanBeSingleton {
 
     public function setSingletonIfEmpty($value): IoCProvidingInterface
     {
-        if (empty($this->singletonValue))
+        if (empty($this->singletonValue)) {
             $this->singletonValue = $value;
+        }
 
         return $this;
     }
@@ -35,5 +35,4 @@ trait CanBeSingleton {
     {
         $this->isSingleton = $singleton;
     }
-
 }

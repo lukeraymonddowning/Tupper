@@ -2,6 +2,6 @@
 
 namespace Downing\Tupper\Fakes;
 
-class EmptyClass implements EmptyInterface {
-
+class EmptyClass implements EmptyInterface
+{
 }
