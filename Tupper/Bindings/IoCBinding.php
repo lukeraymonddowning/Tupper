@@ -3,36 +3,52 @@
 namespace Downing\Tupper\Bindings;
 
 use Downing\Tupper\Exceptions\ResolutionNotProvidedException;
-use ReflectionException;
 
-class IoCBinding implements IoCBindingInterface, IoCProvidingInterface
-{
-    use CanBeSingleton;
+class IoCBinding implements IoCBindingInterface, IoCProvidingInterface {
 
-    private $implementationProvided = false;
-    private $implementation;
+    use HasSingletonLogic;
+
+    private $implementationProvided = false, $implementation;
 
     public function provide($implementation, $isSingleton = false): IoCProvidingInterface
     {
-        $this->implementation = $implementation;
-        $this->implementationProvided = true;
-        $this->makeSingleton($isSingleton);
+        $this->setImplementation($implementation)
+             ->recordImplementationHasBeenProvided()
+             ->setIsSingleton($isSingleton);
 
         return $this;
     }
 
-    /**
-     * @throws ResolutionNotProvidedException
-     * @throws ReflectionException
-     *
-     * @return mixed
-     */
+    public function provideSingleton($implementation): IoCProvidingInterface
+    {
+        return $this->provide($implementation, true);
+    }
+
+    protected function setImplementation($implementation)
+    {
+        $this->implementation = $implementation;
+
+        return $this;
+    }
+
+    protected function recordImplementationHasBeenProvided()
+    {
+        $this->implementationProvided = true;
+
+        return $this;
+    }
+
     public function getImplementationOrFail()
     {
-        if (!$this->implementationProvided) {
-            throw new ResolutionNotProvidedException($this);
-        }
+        $this->failIfNoImplementationProvided();
 
         return $this->implementation;
     }
+
+    protected function failIfNoImplementationProvided()
+    {
+        if (!$this->implementationProvided)
+            throw new ResolutionNotProvidedException($this);
+    }
+
 }
